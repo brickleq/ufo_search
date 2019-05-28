@@ -33,6 +33,14 @@ cell6.innerHTML = objectData.durationMinutes;
 cell7.innerHTML = objectData.comments;
 }
 
-document.getElementById("datetime").addEventListener("input", [function]);
+// document.getElementById("datetime").addEventListener("submit", filterByDate());
 
-document.getElementById("filter-btn").addEventListener("click", filterByDate);
+// document.getElementById("filter-btn").addEventListener("click", filterByDate(event)) {event.preventDefault()};
+
+// function filterByDate() {
+//    var dt = document.getElementById("datetime");
+//
+//    console.log("hello world");
+//    console.log(dt.value);
+//    return false;
+// }
