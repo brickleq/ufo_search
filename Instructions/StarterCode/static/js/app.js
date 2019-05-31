@@ -2,6 +2,7 @@
 var tableData = data;
 
 // YOUR CODE HERE!
+// ok, here goes...
 
 // Find a <table> element with id="ufo-table":
 var table = document.getElementById("ufo-table");
@@ -33,14 +34,21 @@ cell6.innerHTML = objectData.durationMinutes;
 cell7.innerHTML = objectData.comments;
 }
 
-// document.getElementById("datetime").addEventListener("submit", filterByDate());
+// Submit Button handler
+function handleSubmit() {
+    // Prevent the page from refreshing
+    // d3.event.stopPropagation();
+    d3.event.preventDefault();
+  
+    // Select the input value from the form
+    var dateInput = d3.select("#datetime").node().value;
+    console.log(dateInput);
+ 
+    // clear the input value
+    d3.select("#datetime").node().value = "";
 
-// document.getElementById("filter-btn").addEventListener("click", filterByDate(event)) {event.preventDefault()};
+    // Call function to filter by selected date
+    // filterByDate(dateInput);
+  }
 
-// function filterByDate() {
-//    var dt = document.getElementById("datetime");
-//
-//    console.log("hello world");
-//    console.log(dt.value);
-//    return false;
-// }
+d3.select("#filter-btn").on("click", handleSubmit);
