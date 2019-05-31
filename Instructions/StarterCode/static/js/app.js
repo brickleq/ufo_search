@@ -51,7 +51,11 @@ function handleSubmit() {
     filterByDate(dateInput);
   }
 
-function clearTable(table) {
+function clearTable() {
+    var table = document.getElementById("ufo-table");
+
+
+
     var firstRow = table.rows[0];
     var tBody = table.tBodies[0].cloneNode(false);
     tBody.appendChild(firstRow);
