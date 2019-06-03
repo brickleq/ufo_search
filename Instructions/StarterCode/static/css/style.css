@@ -102,7 +102,7 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 640px;
+  height: 660px;
   padding: 20px;
   margin: 0;
   background: black;
@@ -243,4 +243,9 @@ panel-heading {
 table-striped {
   background-color: #8C2C02;
   color: #B08069;
+  border-top: #8c2c02;
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #8c2c02; // Choose your own color here
+ }
