@@ -8,6 +8,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background: #B08069;
+  background-color: #8C2C02;
 }
 
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
@@ -16,6 +18,7 @@ body {
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
+  background: #B08069;
 }
 
 /* The footer is positioned at the bottom of the page */
@@ -25,7 +28,7 @@ body {
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #4e5d6c;
+  background: #B08069;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -35,12 +38,13 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #8C2C02;
 }
 
 .navbar {
   padding: 5px;
   margin: 0;
+  background: #8C2C02;
 }
 
 /* This CSS styles the ufo icon in the navbar */
@@ -49,27 +53,30 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
+  color: #B08069;
 }
 
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
+  color: #B08069;
 }
 
 .filters .panel-body {
   padding: 0;
+  color: #B08069;
 }
 
 .filters {
   margin-top: 10px;
+  color: #B08069;
 }
 
 select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: #B7A39C;
   outline: none;
 }
 
@@ -81,6 +88,7 @@ select {
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
+  background: #B08069;
 }
 
 .loader {
@@ -94,11 +102,11 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 550px;
+  height: 640px;
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/uni_this_island_earth_exhibition_55.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -120,22 +128,22 @@ select {
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #B7A39C;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: #B7A39C;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #8e979f;
+  color: #B7A39C;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #8e979f;
+  color: #B7A39C;
 }
 
 /* media queries which will only be activated at specific screen sizes */
@@ -153,11 +161,12 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #B08069;
   }
 
   #table-area tr td:last-child {
     margin-bottom: 20px;
+    background: #B08069;
   }
 
   #table-area tr td:last-child::after {
@@ -166,16 +175,18 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: #B08069;
   }
 
   #table-area td {
     font-size: 1.25em;
+    background: #B08069
   }
 
   #table-area tbody td {
     display: block;
     text-align: center;
+    background: #B08069;
   }
 
   #table-area tbody td::before {
@@ -222,4 +233,14 @@ select {
   to {
     opacity: 1;
   }
+}
+
+panel-heading {
+  background-color: #8C2C02;
+  color: #B08069;
+}
+
+table-striped {
+  background-color: #8C2C02;
+  color: #B08069;
 }
